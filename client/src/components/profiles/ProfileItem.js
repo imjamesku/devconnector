@@ -1,7 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 import PropTypes from 'prop-types'
-import { connect } from 'react'
 
 const ProfileItem = ({ profile: { user: { _id, name, avatar },
     status,

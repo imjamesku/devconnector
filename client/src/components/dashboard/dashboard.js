@@ -11,7 +11,7 @@ import { Link } from 'react-router-dom';
 const Dashboard = ({ getCurrentProfile, auth: { user }, profile: { profile, loading }, deleteAccount }) => {
     useEffect(() => {
         getCurrentProfile();
-    }, []);
+    }, [getCurrentProfile]);
     return loading && profile === null ? <Spinner /> :
         <>
             <h1 className="large text-primary">Dashboard</h1>
