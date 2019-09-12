@@ -105,6 +105,7 @@ router.post(
                 return res.json(profile)
             }
             // Create
+            profileFields.user = req.user.id;
             profile = new Profile(profileFields);
             await profile.save();
             return res.json(profile);
